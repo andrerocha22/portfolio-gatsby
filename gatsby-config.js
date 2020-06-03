@@ -6,9 +6,12 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Andre Rocha`,
+    title: `André F. Rocha`,
+    author: `André Felipe Rocha`,
     siteUrl: `https://www.andrerocha.me`,
     description: `My portfolio`,
+    linkedinUrl: `https://www.linkedin.com/in/andrefelipe22/`,
+    githubUrl: `https://github.com/andrerocha22`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
