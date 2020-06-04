@@ -10,6 +10,7 @@ module.exports = {
     author: `André Felipe Rocha`,
     siteUrl: `https://www.andrerocha.me`,
     description: `My portfolio`,
+    email:`andreerocha2@gmail.com`,
     linkedinUrl: `https://www.linkedin.com/in/andrefelipe22/`,
     githubUrl: `https://github.com/andrerocha22`,
   },

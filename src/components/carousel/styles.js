@@ -13,6 +13,18 @@ export const CarouselSlide = styled.div`
 
 export const CarouselSlides = styled.div`
   display: flex;
+  width: 100%;
   transform: translateX(-${props => props.currentSlide * 100}%);
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
+`
+
+export const CarouselButtons = styled.button`
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ffffff99;
+
+  &:hover {
+    color: #ffffff;
+  }
 `

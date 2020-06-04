@@ -12,7 +12,12 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    background: #000000;
+
+    background: url(https://images.unsplash.com/photo-1514483127413-f72f273478c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1920&q=60);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 `
 
