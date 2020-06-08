@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa"
 import { MdMail } from "react-icons/md"
 
 // import {graphql, useStaticQuery} from 'gatsby'
-import { Container, List, ListItem, IconsContainer, IconsLink } from "./styles"
+import { Container, IconsContainer, IconsLink } from "./styles"
 
 export default function Header() {
   return (

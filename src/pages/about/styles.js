@@ -38,6 +38,22 @@ export const Card = styled.div`
   -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
   box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 1);
 `
+export const CardTitle = styled.h1`
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  justify-content: center;
+`
+
+export const CardDescription = styled.p`
+  display: flex;
+  width: 100%;
+  text-align: justify;
+  line-height: 1.3rem;
+  justify-content: center;
+`
+
 export const SessionTitle = styled.h1`
   color: #fff;
 `

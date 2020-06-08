@@ -4,6 +4,8 @@ import {
   Container,
   CardContainer,
   Card,
+  CardTitle,
+  CardDescription,
   SessionTitle,
 } from "./styles"
 import Layout from "../../components/layout"
@@ -45,27 +47,27 @@ export default function About() {
 
         <CardContainer>
           <Card borderColor="#FF0000">
-            <h1>Web Development</h1>
-            <p>
+            <CardTitle>Web Development</CardTitle>
+            <CardDescription>
               I have experience building website and playables ads using
               Javascript, Typescript, React, HTML, CSS.
-            </p>
+            </CardDescription>
           </Card>
           <Card borderColor="#FF0000">
-            <h1>Data Structures & Algorithms</h1>
-            <p>
+            <CardTitle>Data Structures & Algorithms</CardTitle>
+            <CardDescription>
               As coming from the Computer Engineer background, I have good grasp
               over fundamental concepts of DSA.
-            </p>
+            </CardDescription>
           </Card>
           <Card borderColor="#FF0000">
-            <h1>Product Management</h1>
-            <p>
+            <CardTitle>Product Management</CardTitle>
+            <CardDescription>
               Study about product management is my new hobbie. After 1 year
               working together with the BI team at Wildlife Studios, I figured
               out how important is study your client, your product and your
               goals to be the best in your
-            </p>
+            </CardDescription>
           </Card>
         </CardContainer>
 
@@ -73,8 +75,10 @@ export default function About() {
 
         <CardContainer>
           <Card borderColor="#0000FF">
-            <h1>Creative Engineer at Wildlife Studios (2018-2019)</h1>
-            <p>
+            <CardTitle>
+              Creative Engineer at Wildlife Studios (2018-2019)
+            </CardTitle>
+            <CardDescription>
               I used the game engine Cocos Creato and Typescript in the
               development of playables ads for user acquisition campaigns.
               Meanwhile, I acted as product owner of each playable developed,
@@ -82,21 +86,21 @@ export default function About() {
               business intelligence, I learned concepts like metrics and UX. I
               was also responsible for testing and submitting completed
               playables for each ad network we worked on.
-            </p>
+            </CardDescription>
           </Card>
           <Card borderColor="#0000FF">
-            <h1>
+            <CardTitle>
               BS in Computer Engineering <br />
               (2014-2019)
-            </h1>
-            <p>
+            </CardTitle>
+            <CardDescription>
               During my under-graduation, I participated in the Academic
               Directory of Computing as Financial Director. I was also part of
               the Microelectronics Group of the Federal University of Itajubá
               where I studied two main topics: Development of a plataform of
               integrated circuits and A Reconfigurable artificial neural network
               architecture using FGPA.
-            </p>
+            </CardDescription>
           </Card>
         </CardContainer>
 
@@ -104,18 +108,18 @@ export default function About() {
 
         <CardContainer>
           <Card borderColor="#00FF00">
-            <h1>Web Development</h1>
-            <p>
+            <CardTitle>Web Development</CardTitle>
+            <CardDescription>
               I have experience building website and playables ads using
               Javascript, Typescript, React, HTML, CSS.
-            </p>
+            </CardDescription>
           </Card>
           <Card borderColor="#00FF00">
-            <h1>Web Development</h1>
-            <p>
+            <CardTitle>Web Development</CardTitle>
+            <CardDescription>
               I have experience building website and playables ads using
               Javascript, Typescript, React, HTML, CSS.
-            </p>
+            </CardDescription>
           </Card>
         </CardContainer>
       </Container>

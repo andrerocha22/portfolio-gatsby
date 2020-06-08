@@ -1,10 +1,10 @@
-import React, { useState } from "react"
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
+import React, { useState, useEffect } from "react"
+// import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
 import {
   CarouselWrapper,
   CarouselSlide,
   CarouselSlides,
-  CarouselButtons,
+  // CarouselButtons,
 } from "./styles"
 
 export default function Carousel({ children }) {
@@ -16,18 +16,18 @@ export default function Carousel({ children }) {
     </CarouselSlide>
   ))
 
-  const handleClickedLeft = () => {
-    setCurrentSlide(
-      (currentSlide - 1 + activeSlide.length) % activeSlide.length
-    )
-  }
-
-  const handleClickedRight = () => {
-    if(currentSlide === activeSlide.length){
-      setCurrentSlide(0)
+  useEffect(() => {
+    const moveCarouselToRight = () => {
+      if (currentSlide === activeSlide.length) {
+        setCurrentSlide(0)
+      }
+      setCurrentSlide((currentSlide + 1) % activeSlide.length)
     }
-    setCurrentSlide((currentSlide + 1) % activeSlide.length)
-  }
+
+    setTimeout(() => {
+      moveCarouselToRight()
+    }, 5000)
+  }, [currentSlide, activeSlide.length]);
 
   return (
     <div>
@@ -36,13 +36,13 @@ export default function Carousel({ children }) {
           {activeSlide}
         </CarouselSlides>
       </CarouselWrapper>
-      <CarouselButtons onClick={handleClickedLeft}>
+      {/* <CarouselButtons onClick={handleClickedLeft}>
         <FiChevronLeft size="2rem" />
         {currentSlide}
       </CarouselButtons>
       <CarouselButtons onClick={handleClickedRight}>
         <FiChevronRight size="2rem" />
-      </CarouselButtons>
+      </CarouselButtons> */}
     </div>
   )
 }
