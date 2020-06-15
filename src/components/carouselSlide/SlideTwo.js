@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 const SContainer = styled.div`
   align-items: center;
+  justify-content: center;
   display: flex;
   width: 100%;
   height: 300px;
@@ -14,17 +15,19 @@ const STextWrapper = styled.div`
   color: #fff;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 5px 10px;
 `
 
 const SlideTwo = () => (
   <SContainer>
     <STextWrapper>
-      <h1>Header 2</h1>
-      <p>A short paragraph with some descriptive text.</p>
+      <h1>
+        Your time is limited, so don't waste it living someone else's life
+      </h1>
+      <p>- Steve Jobs</p>
     </STextWrapper>
-    <img src="https://via.placeholder.com/400/3D1D73/ffffff" />
-
   </SContainer>
 )
 

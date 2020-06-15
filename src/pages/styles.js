@@ -54,6 +54,6 @@ export const CardDescription = styled.p`
   justify-content: center;
 `
 
-export const SessionTitle = styled.h1`
+export const SectionTitle = styled.h1`
   color: #fff;
 `

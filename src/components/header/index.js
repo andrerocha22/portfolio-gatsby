@@ -39,19 +39,32 @@ export default function Header() {
     <Container>
       <List id="list">
         <ListItem
+          href="#section1"
           className="selected"
           id="about"
           onClick={() => handleNavbar("about")}
         >
           About Me
         </ListItem>
-        <ListItem id="expertise" onClick={() => handleNavbar("expertise")}>
+        <ListItem
+          href="#section2"
+          id="expertise"
+          onClick={() => handleNavbar("expertise")}
+        >
           Expertise
         </ListItem>
-        <ListItem id="experience" onClick={() => handleNavbar("experience")}>
+        <ListItem
+          href="#section3"
+          id="experience"
+          onClick={() => handleNavbar("experience")}
+        >
           Experience
         </ListItem>
-        <ListItem id="projects" onClick={() => handleNavbar("projects")}>
+        <ListItem
+          href="#section4"
+          id="projects"
+          onClick={() => handleNavbar("projects")}
+        >
           Projects
         </ListItem>
       </List>
